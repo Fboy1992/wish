@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>爱的许愿墙</title>
+	<jsconst/>
+	<link rel="stylesheet" href="__PUBLIC__/css/sf_wish.css" />
+	<link rel="shortcut icon" href="__PUBLIC__/images/favicon.ico"/>
+	<script src="__PUBLIC__/js/jquery.js"></script>
+	<script src="__PUBLIC__/js/send_form.js"></script>
+</head>
+<body>
+	<div id="top">	
+	</div>
+	<div id="header">
+		<div class="cont">
+			<h2>爱的许愿墙
+				<span>www.xuyanqiang.com</span>
+			</h2>
+			<div class="add" id="add">
+				<img src="__PUBLIC__/images/heart.jpg" alt="许愿+" />
+				<p>我要许愿</p>
+			</div>
+
+		</div>
+	</div>
+	<div id="bd">
+		<div id="page">
+			<list from="$wish" name="n"><!--n就相等于foreach 中$value list是框架提供的标签-->
+				<div class="paper a<?php echo mt_rand(1,3)?>">
+					<a href="javascript:void(0);" class="close">关闭</a>
+					<h2>幸运号<span>【{$n.wid}】</span></h2>
+					<p id="content">{$n.content}</p>
+					<p>许愿人:{$n.name}</p>
+					<p>{$n.time|date:'Y-m-d H:i:s', @@}</p><!--两个@符代表将$n.time传过来-->
+				</div>
+			</list>
+		</div>
+		<div id="send_form" style="display:none;">
+			<h2>写下你的愿望</h2>
+			<a href="javascript:void(0);" id='close'>X</a>
+			<form action="" name="send_wish">
+				<p class="nick">昵称：</p>
+				<input type="text" name="nickname" class="nick_input" />
+				<p class="wish">愿望：（输入文字不得大于<b>50</b>个字）</p>
+				<textarea name="content"></textarea>
+				<div id="phiz">
+					<img src="__PUBLIC__/images/1.gif"/>
+					<img src="__PUBLIC__/images/2.gif"/>
+					<img src="__PUBLIC__/images/3.gif"/>
+					<img src="__PUBLIC__/images/4.gif"/>
+					<img src="__PUBLIC__/images/5.gif"/>
+					<img src="__PUBLIC__/images/6.gif"/>
+					<img src="__PUBLIC__/images/7.gif"/>
+					<img src="__PUBLIC__/images/8.gif"/>
+					<img src="__PUBLIC__/images/9.gif"/>
+					
+				</div>
+				<span class="submit">
+					许下愿望
+				</span>
+			</form>
+		</div>
+	</div>
+	<div id="footer">
+		<span class="footer_one">
+		</span>
+		<span class="footer_two">
+			许一个愿.暖一颗心
+		</span>
+		<span class="footer_three">
+		</span>
+	</div>
+</body>
+</html>

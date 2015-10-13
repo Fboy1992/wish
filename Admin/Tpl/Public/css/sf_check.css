@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* css reset start */
+h1,h2,h3,h4,h5,h6,p,ol,ul,li,dl,dd,textarea,form,input,select,body,div,a{
+	margin:0;padding:0;font-size:12px;font-family: sans-serif "微软雅黑",Tahoma,Arial;
+}
+em{font-style:normal;}
+li{list-style:none;}
+a{text-decoration:none;outline: medium none;}
+img{vertical-align:top;border:none;}
+textarea{overflow:auto;resize:none;}
+
+/* css reset end */
+
+#tb {
+	margin: 10px 0 0 0;
+	width: 100%;
+	
+}
+#tb #table {
+	width: 80%;
+	margin: 20px auto;
+	background: #fe4;
+}
+#tb #table tr {
+	
+	height: 30px;
+}
+#tb #table tr td.th {
+	font-size: 24px;
+	color:green;
+	height: 20px;
+}
+#tb  #table tr td.th {
+	border: none;
+	color:#fe3;
+	width: 100px;
+
+}
+#tb #table tr td{
+	height: 15px;
+	vertical-align:middle;
+	border:1px solid #777;
+	word-break:break-all;
+}
+#tb #table tr.tableTop td {
+	font-size: 14px;
+	color:red;
+	font-weight: 600;
+	height: 20px;
+}
+#tb #table tr td.tdLtitle2{
+	width: 30%;
+	height: 15px;
+	valign:middle;
+	border:1px solid #777;
+	word-break:break-all;
+	
+}
+
+#tb #table tr td img {
+	height: 15px;
+	width:15px;
+	margin-right: 3px;
+}
+
+
+.page {
+	height: 30px;
+	width: 600px;
+	margin: 10px auto;
+}
