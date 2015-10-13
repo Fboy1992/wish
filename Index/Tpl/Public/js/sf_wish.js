@@ -1,6 +1,6 @@
 window.onload = function() {
 
-	/*var oPage = document.getElementById('page');
+    	/*var oPage = document.getElementById('page');
 	var oA = oPage.getElementsByTagName('a');
 	var oDivPaper = oPage.getElementsByTagName('div');
 	var len = oDivPaper.length;
